@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mays</title>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Don't use this in production --> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+    
+   
+    function Movie(props) {
+ 
+    return (
+      <div style={ { borderStyle:'solid', borderWidth:'1px', width:'200px', padding:'5px' } }>
+        <p>{props.title}</p>
+        <p> {props.theatre}</p>
+        <p> {props.time}</p>
+      </div>
+    )
+  }
+ function MyApp(){
+    return(
+    <div>
+        <Movie title="Frozen 2" theatre="Tennispalatsi - sali 1" time="10:30" />
+        <Movie title="Joker" theatre="Tennispalatsi - sali 2" time="12:30" />
+        <Movie title="Terminator"theatre="Tennispalatsi - sali 3" time="14:30" />
+      </div>
+    )
+ }
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root')
+ 
+);
+root.render(<MyApp/>);
+
+
+    </script>
+
+  </body>
+</html>
