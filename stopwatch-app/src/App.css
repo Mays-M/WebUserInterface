@@ -1,0 +1,12 @@
+
+.myapp{
+margin-left: 300px;
+margin-top: 2rem;
+border: #282c34 solid 1px;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+}
+.mybutton{
+  margin: 2px;
+}
