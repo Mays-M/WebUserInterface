@@ -1,4 +1,4 @@
-#  WeB User Interface exercises 
+#  Web User Interface exercises 
 
 
 
